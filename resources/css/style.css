@@ -71,10 +71,19 @@ footer {
     header {
         height: 17rem;
     }
+    header span {
+        display:none;
+    }
     header nav span {
         display:none;
     }
     header nav span:nth-child(1) {
         display:inline;
+    }
+    footer span {
+        display:none;
+    }
+    footer {
+        justify-content: center !important;
     }
 }
