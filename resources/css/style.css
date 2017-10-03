@@ -8,9 +8,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .flex-start {
     justify-content: flex-start;
+}
+.flex-center {
+    justify-content: center;
 }
 .logo {
     height: 1.5rem;
@@ -59,6 +63,42 @@ header nav span {
 /** Main styles **/
 main {
     width: 960px;
+    margin: 3rem auto 5rem auto;
+}
+.offerings {
+    justify-content: center;
+}
+.offering:nth-child(2) {
+    margin: 0 6rem;
+}
+.offering {
+    width: 5rem;
+    height: 8rem;
+    text-align: center;
+}
+.offering img {
+    width: 3.5rem;
+    height: auto;
+}
+.infos {
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+.info {
+    width: 35%;
+    margin-right: 5%;
+}
+.info h3 {
+    width: 10rem;
+    padding: 0.5rem 1.25rem;
+    background-color: cadetblue;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.info p {
+    margin-top: 1rem;
 }
 /** Footer styles **/
 footer {
@@ -86,6 +126,9 @@ footer {
         top: 5rem;
         padding: 0.75rem 4rem;
         font-size: 1.33rem;
+    }
+    main {
+        width: auto;
     }
     footer {
         width: auto;
@@ -116,6 +159,22 @@ footer {
     }
     .header-callout span {
         display:inline;
+    }
+    .offerings {
+        padding: 3.77rem 0;
+        flex-direction: column;
+        font-size: 0.77rem;
+    }
+    .info {
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+    .info h3 {
+        width: 100%;
+        text-align: center;
+    }
+    .info p {
+        margin: .5rem;
     }
     footer span {
         display:none;
