@@ -75,9 +75,17 @@ footer {
     header {
         height: 22rem;
     }
+    .header-contents {
+        width: auto;
+    }
     .header-bar {
         top: 0;
-        width: auto;
+    }
+    .header-callout {
+        right: 2rem;
+        top: 5rem;
+        padding: 0.75rem 4rem;
+        font-size: 1.33rem;
     }
     footer {
         width: auto;
@@ -95,6 +103,18 @@ footer {
         display:none;
     }
     header nav span:nth-child(1) {
+        display:inline;
+    }
+    .header-callout {
+        display:block;
+        right: 0;
+        top: 9rem;
+        padding: 1rem;
+        font-size: 1rem;
+        position: relative;
+        text-align: center;
+    }
+    .header-callout span {
         display:inline;
     }
     footer span {
